@@ -1,3 +1,20 @@
+# 基本介绍
+本项目使用ros2 humble框架搭建，用于简单机器人虚拟环境仿真，可以用于采集数据、训练模型  
+
+# 环境配置
+## 1.下载ROS2 Humble  
+下载以及基础操作教程：  
+[https://docs.ros.org/en/humble/index.html](https://docs.ros.org/en/humble/index.html)   
+
+## 2.安装Gazebo
+略  
+
+## 3.下载仓库  
+`mkdir ~/dev_ws`
+`cd dev_ws`
+`git clone https://github.com/winster-bai/ros2_humble_simulation.git`
+`colcon build`
+
 # 节点及功能
 
 ## 1. HCR底座的URDF模型
@@ -95,7 +112,7 @@ ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true map_subscribe_t
 ```
 
 此方法会实时更新costmap  
-瞬态本地订阅（没完全理解）
+瞬态本地订阅
 
 用launch调用map server和amcl
 
